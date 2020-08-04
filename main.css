@@ -41,6 +41,7 @@
     body {
 
 background: var(--color-background);
+background: var(--color-primary);
 display:flex;
 align-items: center;
 justify-content: center;
