@@ -64,7 +64,7 @@ width: 100%;
 
     text-decoration:none;
 
-transition: background 0,2s;
+    transition: background 1,0s;
 
     color: var(--color-button-text);
 
@@ -88,7 +88,11 @@ transition: background 0,2s;
 
     }
     
-    .buttons-container
+    .buttons-container a.give-classes:hover {
+      background: var(--color-secondary-dark);
+      
+
+    }
 
 
    /* --color-secondary
