@@ -1,0 +1,15 @@
+name: 'BrowserStack Test'
+on: [push, pull_request]
+
+jobs:
+  ubuntu-job:
+    name: 'BrowserStack Test on Ubuntu'
+    runs-on: ubuntu-latest
+    steps:
+    - name: BrowserStack Action
+      uses: 'browserstack/github-actions@master'
+      with:
+        username:  ${{ secrets.USERNAME }}
+        access-key: ${{ secrets.KEY }}
+        build-name: Regressivo_pdp_01
+        project-name: davi
