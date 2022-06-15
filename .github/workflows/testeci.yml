@@ -14,8 +14,8 @@ jobs:
     - name: 'BrowserStack Env Setup'
       uses: 'browserstack/github-actions@master'
       with:
-        username:  ${{ secrets.USERNAMEBS }}
-        access-key: ${{ secrets.KEYBS }}
+        username:  ${{ secrets.USERNAME }}
+        access-key: ${{ secrets.KEY }}
 
     - name: Install python dependencies
       run: |
